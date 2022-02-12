@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+    char str1[100],str2[100];
+    int len;
+    printf("enter str");
+    gets(str1);
+   printf("given string is %s",str1);
+
+   strupr(str1);
+    printf("\ngiven string in uppercase %s",str1);
+    strlwr(str1);
+    printf("\ngiven string in lowercase %s",str1);
+    len=strlen(str1);
+    printf("\nlenght of given string= %d",len);
+    strcpy(str2,str1);
+    strrev(str1);
+    printf("\n%s",str2);
+    printf("%s",str1);
+    if(strcmp(str1,str2)==0)
+    printf("%s",strcmp);
+    printf("palindrome");
+    else
+    printf("not palindrome");
+    return 0;
+}
